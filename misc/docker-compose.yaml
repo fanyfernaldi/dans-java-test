@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=fernaldi_fany
+      - POSTGRES_PASSWORD=99998888
+      - POSTGRES_DB=dans_fany
+    ports:
+      - '5432:5432'
