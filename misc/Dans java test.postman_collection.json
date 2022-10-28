@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "1338b0bc-a579-46a9-949e-7636699f2ea5",
+		"name": "Dans skill test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11204957"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"fanyfernaldi123\",\n    \"password\": \"fanyfernaldi123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1234/api/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jobs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmYW55ZmVybmFsZGkiLCJpYXQiOjE2NjY5NjEzNDEsImV4cCI6MTY2NzA0Nzc0MX0.bT_3yTTMGkm2MJ-2s5qX0O1_Skd0GaHi8cwOD-lIeLGrpl7w9B4o3H3bfmFXeCB6QDz1N4ZWQuzEmY0-SpgP3Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1234/api/job",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"api",
+						"job"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Job Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmYW55ZmVybmFsZGkxMjMiLCJpYXQiOjE2NjY5NjE3MjksImV4cCI6MTY2NzA0ODEyOX0.gl9Ai3rmsPraRNT-kEAPL1aEeaggIjltoVNS4gdpwEKCo3RKMa1wKhQFen6GBFR7TywX2L_ish2_f3KSNYvFBw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1234/api/job/32bf67e5-4971-47ce-985c-44b6b3860cdb",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"api",
+						"job",
+						"32bf67e5-4971-47ce-985c-44b6b3860cdb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"fanyfernaldi123\",\n    \"password\": \"fanyfernaldi123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1234/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "1234",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
